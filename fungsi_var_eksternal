@@ -1,0 +1,20 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int oblada = 550; //variabel eksternal
+void tambah(); //prototipe fungsi
+void main()
+{
+	cout<< oblada <<endl;
+	tambah();
+	cout<< oblada<< endl;
+	tambah();
+	cout<< oblada<< endl;
+}
+
+void tambah() //definisi fungsi
+{
+	oblada++; //variabel eksternal dinaikkan
+}
