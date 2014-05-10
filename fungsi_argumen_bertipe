@@ -1,0 +1,33 @@
+//contoh pembuatan fungsi dengan argumen bertipe
+//long dan nilai balik juga bertipe long
+
+#include<iostream>
+#include<iomanip>
+#include <conio.h>
+
+using namespace std;
+
+long kuadrat (long l); //prototype fungsi 
+double maks (double x, double y); //prototype
+void main()
+{
+	for (long bil = 200; bil < 2000; bil+=200)
+	cout<< setw(8) <<bil 
+	<<setw(8) <<kuadrat(bil)<<endl;
+	
+	cout<< maks (65789,123)<< endl;
+	cout<< maks (123,65789) <<endl;
+}
+
+long kuadrat (long l) // definisi fungsi
+{
+	return(l*l);
+}
+
+double maks (double x, double y)
+{
+	if (x>y)
+	return (x);
+	else
+	return(y);
+}
