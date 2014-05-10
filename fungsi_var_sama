@@ -1,0 +1,24 @@
+
+// contoh untuk menunjukkan kalau variabel lokal dan variabel eksternal bernama sama 
+
+
+# include <iostream> 
+# include <conio.h> 
+
+using namespace std;
+
+
+int fernando = 55; //variabel eksternal 
+void bravo(); 
+void main() 
+{ 
+	 cout<<"main () : fernando = "<<fernando<< endl; 
+	 bravo(); 
+	 cout<<"main () : fernando = "<<fernando<< endl; 
+} 
+
+void bravo() 
+{ 
+	 int fernando = 77; // variabel lokal 
+	 cout<< "bravo() : fernando = "<<fernando<< endl; 
+}
